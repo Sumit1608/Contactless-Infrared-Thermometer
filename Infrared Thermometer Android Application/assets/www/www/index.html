@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-toggle.min.css">
+        <!-- Custom styles for this template -->
+        <link href="css/cover.css" rel="stylesheet">
+        <script src="js/jquery-1.9.1.min.js"></script>
+		    <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap-toggle.min.js"></script>
+        <title>TEMPERATURE SENSOR</title>
+        <style>
+        @font-face{
+ font-family:'digital-font';
+ src: url('font/Montserrat-Black.ttf');
+}
+.fontcalc {font-family: 'digital-font';
+font-size: 30px;
+color: #01FFCB;}
+.rotateico{background-image: url(img/rotateicon.png);
+  background-repeat: no-repeat;
+      width: 50px; /*or your image's width*/
+      height: 50px; /*or your image's height*/
+      margin: 0;
+      padding: 0;}
+  .rotateico2{background-image: url(img/rotateicon1.png);
+    background-repeat: no-repeat;
+        width: 50px; /*or your image's width*/
+        height: 50px; /*or your image's height*/
+        margin: 0;
+        padding: 0;}
+
+
+</style>
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<header class="masthead ">
+<div class="inner">
+ <h3 class="masthead-brand">Infrared Thermometer</h3>
+ <nav class="nav nav-masthead justify-content-center">
+   <a class="nav-link active" href="#">Welcome</a>
+ </nav>
+</div>
+</header>
+  <div class="container">
+    <div class="row f" >
+      <img src="/img/pic.jpg" class="ter"/>
+    </div>
+
+    <div class="row">
+      <div class="col">
+
+              <div class="fontcalc"><span id="ambiencetemp">00.00</span> &#176;C</div>
+              <p class="card-text">Surrounding</p>
+
+
+
+      </div>
+      <div class="col">
+
+              <div class="fontcalc"><span id="bodytemp">00.00</span> &#176;C</div>
+              <p class="card-text">Body Temp</p>
+
+      </div>
+  </div>
+  </div>
+  <div style="margin-top:100px"></div>
+
+<main role="main" class="inner cover">
+  <input type="checkbox" data-toggle="toggle" data-size="large" data-on="STOP CHECK" data-off="CHECK NOW" data-onstyle="danger" data-offstyle="info" id="onoffclick">
+  <br/><br/><br/><br/>
+  <!-- <input type="checkbox" data-toggle="toggle" data-size="normal" data-on="<div class='rotateico'></div>" data-off="<div class='rotateico2'></div>" data-onstyle="default" data-offstyle="default" id="rotateclick"> -->
+</main>
+</div>
+
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
